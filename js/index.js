@@ -282,7 +282,7 @@ window.onload = function () {
 
 function reveal() {
   // Reproducir archivo MP3 en segundo plano
-  var audio = new Audio('https://www.youtube.com/watch?v=042WtX-131s');
+  var audio = new Audio('../assets/The-Weeknd-True-Colors.mp3');
   audio.play();
 
   // Resto del código de la función reveal()
@@ -300,7 +300,7 @@ function reveal() {
   }
 
   var ifrm = document.createElement("iframe");
-  ifrm.setAttribute("src", "https://www.youtube.com/watch?v=042WtX-131s");
+  ifrm.setAttribute("src", "../video/vid.mp4");
   ifrm.setAttribute("allow", "autoplay");
   ifrm.style.border = 'none';
   document.querySelector('#video').appendChild(ifrm);
