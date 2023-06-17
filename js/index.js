@@ -281,21 +281,27 @@ window.onload = function () {
 };
 
 function reveal() {
+  // Reproducir archivo MP3 en segundo plano
+  var audio = new Audio('assets/The-Weeknd-True-Colors.mp3');
+  audio.play();
+
+  // Resto del código de la función reveal()
   document.querySelector('.merrywrap').style.backgroundColor = 'transparent';
 
   loop();
 
   var w, h;
   if (window.innerWidth >= 1000) {
-    w = 295;h = 180;
-  } else
-  {
-    w = 255;h = 160;
+    w = 295;
+    h = 180;
+  } else {
+    w = 255;
+    h = 160;
   }
 
   var ifrm = document.createElement("iframe");
   ifrm.setAttribute("src", "video/vid.mp4");
+  ifrm.setAttribute("allow", "autoplay");
   ifrm.style.border = 'none';
   document.querySelector('#video').appendChild(ifrm);
 }
-
