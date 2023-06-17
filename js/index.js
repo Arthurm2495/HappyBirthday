@@ -282,7 +282,7 @@ window.onload = function () {
 
 function reveal() {
   // Reproducir archivo MP3 en segundo plano
-  var audio = new Audio('https://github.com/Arthurm2495/HappyBirthday/blob/main/assets/The-Weeknd-True-Colors.mp3');
+  var audio = new Audio("https://github.com/Arthurm2495/HappyBirthday/raw/main/assets/The-Weeknd-True-Colors.mp3");
   audio.play();
 
   // Resto del código de la función reveal()
@@ -298,10 +298,13 @@ function reveal() {
     w = 255;
     h = 160;
   }
+  
 
   var ifrm = document.createElement("iframe");
-  ifrm.setAttribute("src", "https://github.com/Arthurm2495/HappyBirthday/blob/main/video/vid.mp4");
+  ifrm.setAttribute("src", "https://www.youtube.com/embed/o3TNAyNEJps?autoplay=1");
   ifrm.setAttribute("allow", "autoplay");
   ifrm.style.border = 'none';
   document.querySelector('#video').appendChild(ifrm);
+  
+  
 }
